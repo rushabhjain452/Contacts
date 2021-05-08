@@ -1,1 +1,0 @@
-Improve Contacts App by add, update and delete contacts.
