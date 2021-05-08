@@ -20,7 +20,7 @@
             android:layout_marginTop="20dp"
             android:layout_marginLeft="10dp"
             android:textSize="20sp"
-            android:textColor="#498A81"
+            android:textColor="#673AB7"
             android:textStyle="bold"/>
 
         <TextView
@@ -31,29 +31,29 @@
             android:layout_marginTop="20dp"
             android:layout_marginLeft="10dp"
             android:textSize="20sp"
-            android:textColor="#498A81"/>
+            android:textColor="#303F9F"/>
 
         <Button
             android:id="@+id/btnCall"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingTop="1px"
-            android:paddingBottom="1px"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
             android:textAlignment="center"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
             android:layout_marginTop="30dp"
-            android:text="\nCall\n"
-            android:textSize="20sp"
+            android:text="Call"
+            android:textSize="25sp"
             android:textColor="#FFF"
             android:textStyle="bold"
-            android:background="#34A563"/>
+            android:background="#9E9D24"/>
 
         <View
             android:layout_width="match_parent"
             android:layout_height="5dp"
             android:layout_marginTop="30dp"
-            android:background="#34A563" />
+            android:background="#880E4F" />
         <TextView
             android:id="@+id/textView2"
             android:layout_width="match_parent"

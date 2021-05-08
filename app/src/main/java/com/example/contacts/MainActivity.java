@@ -72,7 +72,9 @@ public class MainActivity extends Activity {
                     String name = newText;
                     // cursor = cr.query(ContactsContract.Contacts.CONTENT_URI, new String[]{ContactsContract.Contacts._ID, ContactsContract.Contacts.DISPLAY_NAME}, "DISPLAY_NAME LIKE ?" + "*", new String[]{name}, "DISPLAY_NAME");
                     // cursor = cr.query(ContactsContract.Contacts.CONTENT_URI, new String[]{ContactsContract.Contacts._ID, ContactsContract.Contacts.DISPLAY_NAME}, "DISPLAY_NAME LIKE ?", new String[]{name + "%'}, "DISPLAY_NAME");
-                    cursor = cr.query(ContactsContract.Contacts.CONTENT_URI, new String[]{ContactsContract.Contacts._ID, ContactsContract.Contacts.DISPLAY_NAME}, "DISPLAY_NAME LIKE '" + name +  "%'", null, "DISPLAY_NAME");
+//                    cursor = cr.query(ContactsContract.Contacts.CONTENT_URI, new String[]{ContactsContract.Contacts._ID, ContactsContract.Contacts.DISPLAY_NAME}, "DISPLAY_NAME LIKE '" + name +  "%'", null, "DISPLAY_NAME");
+                    // Search in middle of String also
+                    cursor = cr.query(ContactsContract.Contacts.CONTENT_URI, new String[]{ContactsContract.Contacts._ID, ContactsContract.Contacts.DISPLAY_NAME}, "DISPLAY_NAME LIKE '%" + name +  "%'", null, "DISPLAY_NAME");
                     SimpleCursorAdapter adapter = new SimpleCursorAdapter(getBaseContext(), R.layout.row, cursor, new String[]{ContactsContract.Contacts.DISPLAY_NAME}, new int[]{R.id.tvName}, 0);
                     lvContacts.setAdapter(adapter);
                 }
